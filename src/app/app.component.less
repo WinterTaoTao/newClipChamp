@@ -1,0 +1,32 @@
+@shadow-color: rgba(100,100,100,0.5);
+
+.center(){
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.shadow(){
+  box-shadow: 0px 5px 10px @shadow-color;
+}
+
+.price-dropdown {
+  display: inline-block;
+  position: relative;
+  .center;
+
+  app-price-dropdown {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    .shadow;
+    .center;
+    transition: opacity 2s;
+  }
+
+  &:hover app-price-dropdown {
+    display: block;
+    opacity: 1;
+  }
+}
