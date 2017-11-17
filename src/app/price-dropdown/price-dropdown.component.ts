@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PriceDropdownComponent implements OnInit {
 
+  iconPath: string;
   constructor() { }
 
   ngOnInit() {
+    this.iconPath = 'assets/icons/';
   }
 
 }
