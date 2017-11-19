@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DropdownItem } from '../dropdown-item';
+import { DropdownItems } from './priceItems';
 
 @Component({
   selector: 'app-price-dropdown',
@@ -6,12 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./price-dropdown.component.less']
 })
 export class PriceDropdownComponent implements OnInit {
-
-  iconPath: string;
+  dropdownItems: DropdownItem[];
   constructor() { }
 
   ngOnInit() {
-    this.iconPath = 'assets/icons/';
+    this.dropdownItems = DropdownItems;
   }
-
 }

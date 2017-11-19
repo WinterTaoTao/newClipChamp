@@ -3,16 +3,10 @@
 </div>
 
 <div class="dropdown-content">
-  <a class="dropdown-item" id="four-in-one" href="https://clipchamp.com/en/pricing/compress-record">
-    <img class="item-icon" [src]="iconPath + '4in1.svg'" />
-    <div class="item-text">4 in 1</div>
-  </a>
-  <a class="dropdown-item" id="video-request-price" href="https://clipchamp.com/en/video-sharing-request">
-    <img class="item-icon" [src]="iconPath + 'video-request.svg'" />
-    <div class="item-text">Video Request</div>
-  </a>
-  <a class="dropdown-item" id="api-price" href="https://clipchamp.com/en/pricing/api-access#compare-api-plans">
-    <img class="item-icon" [src]="iconPath + 'api.svg'" />
-    <div class="item-text">API</div>
-  </a>
+  <div *ngFor="let dropdownItem of dropdownItems">
+    <a class="dropdown-item" href={{dropdownItem.urlPath}}>
+      <img class="item-icon" src={{dropdownItem.iconPath}}>
+      <div class="item-text">{{dropdownItem.text}}</div>
+    </a>
+  </div>
 </div>

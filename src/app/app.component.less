@@ -32,15 +32,19 @@
   animation-duration: 0.5s;
 }
 
-.price-tag {
+.nav-tag {
   display: inline-block;
   position: relative;
-  .center;
+  float: left;
+  left: 50%;
+  //.center;
 
-  .price-tag-text{
+  .tag-text{
     font-size: 30px;
+    margin: 5px;
   }
 
+  //a blank box to extend the hover area
   .blank{
     .hide;
     .center;
@@ -60,6 +64,7 @@
     .shadow;
   }
 
+  //Triangle arrow
   &:after {
     content: " ";
     .hide;
@@ -71,6 +76,7 @@
     border-color: transparent transparent @dp-content-background-color transparent;
   }
 
+  //hover to make dropdown menu appear
   &:hover {
     .blank {
       .appear;
