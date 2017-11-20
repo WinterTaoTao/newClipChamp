@@ -1,14 +1,12 @@
-<div class="arrow">
-  <label class="arrow"></label>
-</div>
-
 <div class="dropdown-content">
-  <div *ngFor="let dropdownItem of dropdownItems">
+  <div *ngFor="let dropdownItem of getDropdownItems()">
     <a class="dropdown-item" href="{{dropdownItem.jumpLink}}">
       <img class="item-icon" src={{dropdownItem.iconPath}}>
-      <div>
+      <div class="item-text">
         <div class="item-title">{{dropdownItem.title}}</div>
-        <div class="item-introduction">{{dropdownItem.introduction}}</div>
+        <div class="item-introduction" *ngIf="dropdownItem.introduction">
+          {{dropdownItem.introduction}}
+        </div>
       </div>
     </a>
   </div>

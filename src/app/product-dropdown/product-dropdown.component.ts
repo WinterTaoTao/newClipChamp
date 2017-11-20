@@ -8,11 +8,12 @@ import {ProductDropdownItems} from './product-items';
   styleUrls: ['./product-dropdown.component.less']
 })
 export class ProductDropdownComponent implements OnInit {
-  dropDownItems: DropdownItem[];
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-    this.dropDownItems = ProductDropdownItems;
+  ngOnInit() {}
+
+  getDropdownItems(): DropdownItem[] {
+    return ProductDropdownItems;
   }
 
 }
