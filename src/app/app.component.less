@@ -37,11 +37,10 @@
   position: relative;
   float: left;
   left: 50%;
-  //.center;
 
   .tag-text{
     font-size: 30px;
-    margin: 5px;
+    margin:0 30px 0 30px;
   }
 
   //a blank box to extend the hover area
@@ -57,7 +56,7 @@
   app-price-dropdown {
     .hide;
     top: 100%;
-    transform: translate(-@arrow-size, @arrow-size);
+    transform: translateY(@arrow-size);
     background-color: @dp-content-background-color;
     border-radius: 10px;
     overflow: hidden;

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DropdownItem } from '../dropdown-item';
-import { DropdownItems } from './priceItems';
+import { PriceDropdownItems } from './price-items';
 
 @Component({
   selector: 'app-price-dropdown',
@@ -12,6 +12,6 @@ export class PriceDropdownComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.dropdownItems = DropdownItems;
+    this.dropdownItems = PriceDropdownItems;
   }
 }
