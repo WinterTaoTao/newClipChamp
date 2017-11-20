@@ -46,7 +46,6 @@
     .item-text{
       .vertical-center;
       .item-title{
-        margin: 10px 0 10px 0;
         font-size: @title-size;
         font-family: @title-font-family;
         color: @title-color;
@@ -59,8 +58,10 @@
     }
 
     &:hover {
-      .item-title {
-        color: @title-color-hover;
+      .item-text {
+        .item-title {
+          color: @title-color-hover;
+        }
       }
     }
   }
