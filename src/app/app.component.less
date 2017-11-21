@@ -1,4 +1,3 @@
-@shadow-color: rgba(100,100,100,0.5);
 @animation-speed: 0.5s;
 @dp-content-background-color: rgb(255, 255, 255);
 @arrow-size: 10px;
@@ -11,10 +10,6 @@
 .center(){
   left: 50%;
   transform: translateX(-50%);
-}
-
-.shadow(){
-  box-shadow: 5px 5px 10px @shadow-color;
 }
 
 .hide(){
@@ -57,10 +52,8 @@
     .hide;
     top: 100%;
     transform: translateY(@arrow-size);
-    background-color: @dp-content-background-color;
-    border-radius: 10px;
-    overflow: hidden;
-    .shadow;
+    //background-color: @dp-content-background-color;
+
   }
 
   //Triangle arrow

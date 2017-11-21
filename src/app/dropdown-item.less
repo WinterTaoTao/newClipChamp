@@ -1,6 +1,8 @@
 @dropdown-width: 250px;
 @background-color: rgb(255, 255, 255);
 
+@shadow-color: rgba(100,100,100,0.5);
+
 @dropdown-item-height: 80px;
 
 @title-color: rgb(32, 96, 126);
@@ -21,15 +23,21 @@
   transform: translateY(-50%);
 }
 
+.shadow(){
+  box-shadow: 5px 5px 10px @shadow-color;
+}
+
 .dropdown-content{
   width: @dropdown-width;
   background-color: @background-color;
+  border-radius: 10px;
+  overflow: hidden;
+  .shadow;
 
   .dropdown-item {
     display: block;
     height: 80px;
     text-decoration: none;
-    transition: background-color 0.5s;
     padding: 0 20px;
 
     position: relative;
